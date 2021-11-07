@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../contexts/ThemeContext';
 import ThemeToggle from '../theme_toggle/ThemeToggle';
-import YearsDropdown from '../years_dropdown/YearsDropdown';
+// import YearsDropdown from '../years_dropdown/YearsDropdown';
 import phishInLogo from '../../phish-in-logo.png';
 import phishInPartyLogo from '../../phish-in-party-multicolor-logo.png';
 import './Navbar.css';
@@ -28,7 +28,7 @@ const Navbar = () => {
           src={mode ? phishInPartyLogo : phishInLogo}
         ></img>
       </Link>
-      <YearsDropdown />
+      {/* <YearsDropdown /> */}
     </div>
   );
 };
