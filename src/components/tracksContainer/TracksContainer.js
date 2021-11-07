@@ -18,6 +18,7 @@ const TracksContainer = ({ id }) => {
     const getShow = async (id) => {
       try {
         const show = await fetchData(`shows/${id}`);
+        console.log(show.data.tracks);
         setTracks(show.data.tracks);
         setShow(show.data);
       } catch (error) {
@@ -79,10 +80,10 @@ const TracksContainer = ({ id }) => {
               <div className="encore">{filterBySet('Encore')}</div>
             </React.Fragment>
           )}
-          {filterBySet('S').length > 0 && (
+          {filterBySet('Soundcheck').length > 0 && (
             <React.Fragment>
               <h4 style={{ color: theme.primaryText }}>-- Soundcheck --</h4>
-              <div className="encore">{filterBySet('S')}</div>
+              <div className="soundcheck">{filterBySet('Soundcheck')}</div>
             </React.Fragment>
           )}
         </div>
