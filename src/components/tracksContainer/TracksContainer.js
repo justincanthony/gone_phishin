@@ -77,7 +77,7 @@ const TracksContainer = ({ id }) => {
           {filterBySet('encore').length > 0 && (
             <React.Fragment>
               <h4 style={{ color: theme.primaryText }}>-- ENCORE --</h4>
-              <div className="encore">{filterBySet('Encore')}</div>
+              <div className="encore">{filterBySet('encore')}</div>
             </React.Fragment>
           )}
           {filterBySet('Soundcheck').length > 0 && (
