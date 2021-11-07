@@ -55,10 +55,18 @@
 - [Justin Anthony (Author)](https://github.com/justincanthony)
   - Favorite Phish Song: It doesn't matter what they play...!
 - [Nina Brissey (Author)](https://github.com/ninabrissey)
-  - Favorite Phish Song:
+  - Favorite Phish Song: Catapult
 - [Stephanie Magdic (Author)](https://github.com/stephaniemagdic)
 
   - Favorite Phish Song: 'She would have chose a Led Zeppelin API. 🤪 '
+
+## View
+
+Mobile Spec              |
+:----------------------------:
+![gone phishin mobile (12)](https://user-images.githubusercontent.com/82064981/140659375-ef7863cc-e0e2-489c-ab69-8278843b28ae.gif)
+
+
 
 ## Future Features
 
@@ -72,3 +80,4 @@
   - We were able to collaborate with the creators of our server side code and kept them in mind when designing our application as they were looking for a responsive mobile view of their UI.
 - Challenges:
   - We ran into troubles trying to implement reducers on our first go when we learned that useReducer doesn't support async actions natively. We plan to incorporate a reducer to clean up or state management in the future by going with a different approach to our reducer actions.
+
