@@ -55,19 +55,36 @@ const TracksContainer = ({ id }) => {
 
       {tracks.length > 0 && (
         <div className="tracks-container">
-          <h4 style={{ color: theme.primaryText }}>-- SET I --</h4>
-          <div className="set-1">{filterBySet('Set 1')}</div>
-          <h4 style={{ color: theme.primaryText }}>-- SET II --</h4>
-          <div className="set-2">{filterBySet('Set 2')}</div>
-          {/* need to conditionally render set 3 */}
+          {filterBySet('Set 1').length > 0 && (
+            <React.Fragment>
+              <h4 style={{ color: theme.primaryText }}>-- SET I --</h4>
+              <div className="set-1">{filterBySet('Set 1')}</div>
+            </React.Fragment>
+          )}
+          {filterBySet('Set 2').length > 0 && (
+            <React.Fragment>
+              <h4 style={{ color: theme.primaryText }}>-- SET II --</h4>
+              <div className="set-2">{filterBySet('Set 2')}</div>
+            </React.Fragment>
+          )}
           {filterBySet('Set 3').length > 0 && (
             <div className="set-3">
               <h4 style={{ color: theme.primaryText }}>-- SET III --</h4>
               <div className="set-3">{filterBySet('Set 3')}</div>
             </div>
           )}
-          <h4 style={{ color: theme.primaryText }}>-- ENCORE --</h4>
-          <div className="encore">{filterBySet('Encore')}</div>
+          {filterBySet('encore').length > 0 && (
+            <React.Fragment>
+              <h4 style={{ color: theme.primaryText }}>-- ENCORE --</h4>
+              <div className="encore">{filterBySet('Encore')}</div>
+            </React.Fragment>
+          )}
+          {filterBySet('S').length > 0 && (
+            <React.Fragment>
+              <h4 style={{ color: theme.primaryText }}>-- Soundcheck --</h4>
+              <div className="encore">{filterBySet('S')}</div>
+            </React.Fragment>
+          )}
         </div>
       )}
     </section>
